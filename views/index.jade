@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  include header
+  h1= title
+  p Welcome to #{title}
+  a(href="/plus")
+    span Plus
+  br
+  br
+  a(href="/minus")
+    span Minus
+  include footer

@@ -1,0 +1,21 @@
+//
+   Created by Hui Zhou on 2016-10-12.
+
+extends layout
+
+block content
+    include header
+    p I'm Minus Page. First number minus second number, and what is the result?
+    form(action="/minus" method="post")
+        span First number:
+        input(type="text" name="firstNum")
+        br
+        span Second number:
+        input(type="text" name="secondNum")
+        br
+        input(type="submit" value="Submit")
+    br
+    button
+        a(href="/")
+            span Home
+    include footer

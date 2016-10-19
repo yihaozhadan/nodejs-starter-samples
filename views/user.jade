@@ -1,0 +1,13 @@
+//
+   Created by Hui Zhou on 2016-10-13.
+
+extends layout
+
+block content
+    include header
+    p Hi #{firstName} #{lastName}
+    p You are #{age} years old
+    button
+        a(href="/")
+            span Home
+    include footer

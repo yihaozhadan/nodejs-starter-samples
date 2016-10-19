@@ -1,0 +1,24 @@
+//
+   Created by Hui Zhou on 2016-10-13.
+
+extends layout
+
+block content
+    include header
+    p I'm JSON demo page
+    form(action="/users/json" method="post")
+        span First name:
+        input(type="text" name="firstName")
+        br
+        span Last name:
+        input(type="text" name="lastName")
+        br
+        span Year of birth:
+        input(type="text" name="birthYear")
+        br
+        input(type="submit" value="Submit")
+    br
+    button
+        a(href="/")
+            span Home
+    include footer

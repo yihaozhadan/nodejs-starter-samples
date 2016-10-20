@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  include header
+    h1 I'm Async
+    p This is used to test asynchronous call
+    span Number 1:
+    input(id="before1" type="text" name="number1" onkeyup="convert()")
+    br
+    br
+    p(id="after1")
+    span Number 2:
+    input(id="before2" type="text" name="number2" onkeyup="async()")
+    br
+    p(id="after2")
+    button
+      a(href="/")
+        span Home
+  include footer

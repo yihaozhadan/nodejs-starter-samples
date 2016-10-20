@@ -1,6 +1,11 @@
-# Asynchronous Method
-One number plus another and get sum through GET parameters
-## Reference
-[What is JSON?][1]
+# Asynchronous Call
+Compare synchronous and asynchronous requests
 
-[1]: http://www.w3schools.com/tags/ref_httpmethods.asp "Asynchronous Method"
+Create views/async.jade and routes/async.js.
+Import Javascript library. Add `script(src='/javascripts/main.js')` in views/layout.jade. **public/javascripts** contains custom javascripts used by front end.
+## Reference
+[Synchronous and asynchronous requests][1]
+[AJAX Introduction][2]
+
+[1]: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests "Synchronous and asynchronous requests"
+[2]: http://www.w3schools.com/xml/ajax_intro.asp "AJAX Introduction"

@@ -10,6 +10,7 @@ var plus = require('./routes/plus');
 var minus = require('./routes/minus');
 var users = require('./routes/users');
 var async = require('./routes/async');
+var cookies = require('./routes/cookies');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/plus', plus);
 app.use('/minus', minus);
 app.use('/users', users);
 app.use('/async', async);
+app.use('/cookies', cookies);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

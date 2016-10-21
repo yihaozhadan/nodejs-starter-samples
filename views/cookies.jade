@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  include header
+    h1 I'm Cookies Demo
+    p #{message}
+    button
+      a(href="/cookies/session")
+        span Session Cookie
+    br
+    br
+    button
+      a(href="/cookies/logout")
+        span Logout
+    br
+    br
+    button
+      a(href="/")
+        span Home
+  include footer

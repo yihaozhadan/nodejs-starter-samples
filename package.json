@@ -1,17 +1,18 @@
 {
   "name": "NodeJS-starter-samples",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "debug": "DEBUG=samples:server node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "^4.1.0",
     "express": "^4.16.4",
-    "jade": "~1.11.0",
     "morgan": "^1.9.1",
+    "pug": "^2.0.3",
     "serve-favicon": "^2.5.0",
     "uglify-js": "^3.4.9"
   }

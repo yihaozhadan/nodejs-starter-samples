@@ -1,7 +1,8 @@
 {
   "name": "NodeJS-starter-samples",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "author": "Hui Zhou",
   "scripts": {
     "start": "node ./bin/www",
     "debug": "DEBUG=samples:server node ./bin/www"

@@ -1,24 +1,22 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-router.get('/', function(req, res, next) {
-    console.log("Cookie:", req.cookies);
-    var message = "You are not logged in.";
+router.get('/', function(req, res) {
+    let message = "You are not logged in.";
     if (req.cookies.firstName)
-        message = "Welcome "+req.cookies.firstName + " " + req.cookies.lastName;
-    res.render('cookies',{message});
+        message = "Welcome " + req.cookies.firstName + " " + req.cookies.lastName;
+    res.render('cookies', {message});
 });
 
 // Session cookies
-router.get('/session', function(req, res, next) {
+router.get('/session', function(req, res) {
     res.cookie('firstName', 'Tom');
     res.cookie('lastName', 'Cruise');
     res.send("Session cookies are all set.");
 })
 
-router.get('/logout', function(req, res, next) {
+router.get('/logout', function(req, res) {
     // Clear cookie
-
     res.clearCookie("firstName");
     res.clearCookie("lastName");
     res.render('logout');

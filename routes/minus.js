@@ -1,21 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('minus');
 });
 
-router.post('/', function(req, res, next) {
-  // Don't use console.log("Req.body: "+req.body);
-  // Cannot convert object to primitive value
-  console.log("Req.body: ",req.body);
-
-  var f = parseInt(req.body.firstNum);
-  var s = parseInt(req.body.secondNum);
-  console.log("First:"+f+" Second:"+s);
-
-  var diff = f-s;
-  console.log("Diff:"+diff);
+router.post('/', function(req, res) {
+  const f = parseInt(req.body.firstNum);
+  const s = parseInt(req.body.secondNum);
+  const diff = f-s;
   res.send(diff.toString());
 });
 

@@ -1,35 +1,34 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
     res.render('async');
 });
 
-router.get('/convert', function(req, res, next) {
-    var r = "Null";
-    console.log("Number2: ", req.query);
+router.get('/convert', function(req, res) {
+    let r;
     switch(req.query.number) {
         case "1":
-            this.r = "One";
+            r = "One";
             console.log("One");
             break;
         case "2":
-            this.r = "Two";
+            r = "Two";
             console.log("Two");
             break;
         case "12":
-            this.r = "Twelve";
+            r = "Twelve";
             console.log("Twelve");
             break;
         case "123":
-            this.r = "One hundred twenty three";
+            r = "One hundred twenty three";
             console.log("One hundred twenty three");
             break;
         default:
-            this.r = req.query.number;
+            r = req.query.number;
             console.log("Null");
     }
-    res.send(this.r);
+    res.send(r);
 });
 
 module.exports = router;

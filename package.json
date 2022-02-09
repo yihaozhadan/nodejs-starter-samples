@@ -1,5 +1,5 @@
 {
-  "name": "NodeJS-starter-samples",
+  "name": "nodejs-starter-samples",
   "version": "1.0.0",
   "private": false,
   "author": "Hui Zhou",
@@ -8,13 +8,13 @@
     "debug": "DEBUG=samples:server node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cookie-parser": "~1.4.3",
-    "debug": "^4.1.0",
-    "express": "^4.16.4",
-    "morgan": "^1.9.1",
-    "pug": "^2.0.3",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "~1.4.6",
+    "debug": "^4.3.3",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
     "serve-favicon": "^2.5.0",
-    "uglify-js": "^3.4.9"
+    "uglify-js": "^3.15.1"
   }
 }

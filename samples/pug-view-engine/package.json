@@ -1,0 +1,17 @@
+{
+  "name": "pug-view-engine",
+  "version": "1.0.1",
+  "private": false,
+  "author": "Hui Zhou",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cookie-parser": "~1.4.6",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0"
+  }
+}

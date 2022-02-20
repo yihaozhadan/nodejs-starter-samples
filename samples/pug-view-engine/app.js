@@ -1,18 +1,18 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
-var routes = require('./routes');
-var plus = require('./routes/plus');
-var minus = require('./routes/minus');
-var users = require('./routes/users');
-var async = require('./routes/async');
-var cookies = require('./routes/cookies');
+const routes = require('./routes');
+const plus = require('./routes/plus');
+const minus = require('./routes/minus');
+const users = require('./routes/users');
+const async = require('./routes/async');
+const cookies = require('./routes/cookies');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

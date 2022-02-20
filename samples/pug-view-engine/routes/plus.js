@@ -1,16 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   const f = parseInt(req.query.first);
   const s = parseInt(req.query.second); 
   const sum = f+s;
-  if(isNaN(sum)) {
+  if (isNaN(sum)) {
     res.send("Try to change the parameters in URL. Example: localhost:3000/plus?first=1&second=2");
-  }else{
+  } else {
     res.send(sum.toString());
   }
-
 });
 
 module.exports = router;

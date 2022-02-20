@@ -27,5 +27,4 @@ Before you start, take a moment to see how the project structure looks like:
 * Download [NodeJS](https://nodejs.org/en/download/) and install
 * Install Express
 `$ npm install express --save`
-* Create application using [Express application generator](https://expressjs.com/en/starter/generator.html) 
-* Go to [Index](./docs/index.md) page and start to learn NodeJS. There are tutorials with every demo. 
+* Create application using [Express application generator](https://expressjs.com/en/starter/generator.html)
